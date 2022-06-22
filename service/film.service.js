@@ -8,7 +8,7 @@ var headers = {
     clienttype: 'ios_jike_default'
 }
 
-    const toprate = (req, res) => {
+    const toprate = async (req, res) => {
         console.log("GET TOP RATE")
         try {
             let { data } = await axios.get(baseURL + "/cms/app/homePage/getHome?page=0", { headers })
